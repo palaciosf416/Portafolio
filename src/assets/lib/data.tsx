@@ -14,16 +14,18 @@ import mongodbicon from "../../assets/icons/mongoicon.svg";
 import expressicon from "../../assets/icons/expressicon.svg";
 import trelloicon from "../../assets/icons/trelloicon.svg";
 import apiicon from "../../assets/icons/apiicon.svg";
-import axiosicon from "../../assets/icons/axiosicon.svg";
+//import axiosicon from "../../assets/icons/axiosicon.svg";
 //import spotifyicon from "../../assets/icons/spotifyicon.svg";
 import netlifyicon from "../../assets/icons/netlifyicon.svg";
-import rendericon from "../../assets/icons/rendericon.svg";
-import jwticon from "../../assets/icons/jwticon.svg";
+//import rendericon from "../../assets/icons/rendericon.svg";
+//import jwticon from "../../assets/icons/jwticon.svg";
+import vite from "../icons/vite.svg";
 import wordpressicon from "../../assets/icons/wordpressicon.svg";
 import tastyMockup from "../../assets/img/tasty_mockup.webp";
-import stiledCom from "../../assets/img/stiledCom.png";
-import instorMockup from "../../assets/img/instor_mockup.webp";
+//import stiledCom from "../../assets/img/stiledCom.png";
+import navbar from "../img/navbar.png";
 import calculadora from "../../assets/img/calculadora.png";
+import styledComponents from "../../assets/icons/styledComponents.svg";
 import profilepicture from "../img/me2.webp";
 //import caricon from "../../assets/icons/car-icon.svg";
 //import travelicon from "../../assets/icons/travel-icon.svg";
@@ -112,7 +114,7 @@ export const projectsData = [
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
       { name: "React", icon: reacticon },
-      { name: "styled Components", icon: stiledCom},
+      { name: "styled Components", icon: styledComponents},
     ],
     image: calculadora,
     deploymenturl: "https://palaciosf416.github.io/calculadora/",
@@ -128,28 +130,22 @@ export const projectsData = [
     },
   },
   {
-    title: "Furniture Organizer",
+    title: "Side bar",
     description:
-      "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
+      "Un Side Bar que está desarrollada utilizando React y styled-components, ofreciendo una navegación intuitiva y estilizada con soporte para temas claro y oscuro.",
     description_EN:
-      "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
+      "A Side Bar developed using React and styled-components, offering intuitive and stylish navigation with support for light and dark themes.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
       { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
+      { name: "Vite", icon: vite },
+      { name: "styled Components", icon: styledComponents},
     ],
-    image: instorMockup,
-    deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-    githuburl: "https://github.com/AlpayC/Furniture_MERN",
+    image: navbar,
+    deploymenturl: "https://palaciosf416.github.io/Sidebar/",
+    githuburl: "https://github.com/palaciosf416/Sidebar",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -219,6 +215,12 @@ export const skillsDataWeb = [
         hash: "#Tailwind",
         icon: tailwindcssicon,
         color: "#38B2AC",
+      },
+      {
+        title: "Styled Components",
+        hash: "#Styled-components",
+        icon: styledComponents,
+        color: "#a838b2",
       },
       {
         title: "MongoDB",
