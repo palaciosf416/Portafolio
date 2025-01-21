@@ -451,20 +451,20 @@ export const contactData = {
 
 export const toastMessages = {
   loadingProject: {
-    de: "🦄 Die Live Demo wird gleich geöffnet. Server werden gestartet...",
-    en: "🦄 The live demo will open shortly. Starting servers...",
+    de: "🚀 La demostración en vivo se abrirá en breve. Iniciando servidores...",
+    en: "🚀 The live demo will open shortly. Starting servers...",
   },
   successEmailSent: {
-    de: "🦄 Vielen Dank für deine Email. Ich werde mich schnellstmöglich bei dir melden",
-    en: "🦄 Thank you for your email. I will get back to you as soon as possible",
+    de: "🚀 Gracias por tu correo electrónico. Me comunicaré contigo lo antes posible.",
+    en: "🚀 Thank you for your email. I will get back to you as soon as possible.",
   },
   failedEmailSent: {
-    de: "🦄 Leider hat der Versand deiner Email nicht geklappt. Bitte versuche es später noch einmal",
-    en: "🦄 Unfortunately the sending of your email did not work. Please try again later",
+    de: "🚀 Lamentablemente el envío de su correo electrónico no funcionó. Por favor inténtalo de nuevo más tarde.",
+    en: "🚀 Unfortunately the sending of your email did not work. Please try again later.",
   },
   failedValidationName: {
-    de: "Bitte gebe deinen Namen ein",
-    en: "Please fill in your name",
+    de: "Por favor escribe tu nombre.",
+    en: "Please fill in your name.",
   },
 } as const;
 
