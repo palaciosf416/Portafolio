@@ -11,7 +11,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC = () => {
-  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "";
+  const apiBaseUrl = "http://localhost:3000/send-email"; // URL de tu API
 
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -35,12 +35,21 @@ const Contact: React.FC = () => {
   const notifySentForm: React.FormEventHandler<HTMLFormElement> = async (e) => {
     setError(null);
     console.log(error);
-
+  
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
-
+    const data = {
+      name: name,
+      email: email,
+      subject: subject,
+      message: message,
+    };
+  
     try {
-      const response = await axios.post(apiBaseUrl, data);
+      const response = await axios.post(apiBaseUrl, data, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
       console.log(response);
       if (language === "DE") {
         toast.success(toastMessages.successEmailSent.de);
@@ -144,32 +153,6 @@ Wishing you stardust dreams,\n
 ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
 \``;
 
-  //   const codeSnippet2 = `
-  // // 🚀 Initiating Quantum Email Transmission 🪐
-  // const launchEmail = async () => {
-  //   try {
-  //     const response = await fetch('https://alpaycelik.dev/send',{
-  //     method: 'POST',
-  //     headers: {'Content-Type': 'application/json'},
-  //     body: JSON.stringify({
-  //      sender,
-  //      recipient,
-  //      subject,
-  //      message
-  //     })
-  //    });
-
-  //    if (response.ok) {
-  //    console.log('🌌 Transmission successful!');
-  //    } else {
-  //    console.error('🌠 Cosmic glitch encountered...');
-  //    }
-  //   } catch (error) {
-  //   console.error('🌪 Quantum disturbance detected:', error);
-  //   }
-  // };
-  // // 🚀 Ready for Liftoff? 🛸
-  // launchEmail();`;
 
   return (
     <React.Fragment>
