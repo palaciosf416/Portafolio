@@ -11,7 +11,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC = () => {
-  const apiBaseUrl = "http://localhost:3000/send-email"; // URL de tu API
+  const apiBaseUrl = "https://sendmail3124.azurewebsites.net/send-email"; // URL de tu API
 
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -56,6 +56,7 @@ const Contact: React.FC = () => {
       } else {
         toast.success(toastMessages.successEmailSent.en);
       }
+      //resetForm();
     } catch (error) {
       console.log(error);
       if (language === "DE") {
@@ -66,7 +67,14 @@ const Contact: React.FC = () => {
       setError("An Error occured, try again later");
     }
   };
-
+/*
+  const resetForm = () => {
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+  };
+*/
   const handleInputFocus = (fieldName: string) => {
     setCursor(`${fieldName}${cursor}`);
   };
