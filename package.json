@@ -3,8 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://palaciosf416.github.io/Portafolio",
   "scripts": {
+    "predeploy": "npm run build",
     "dev": "vite",
+    "deploy": "gh-pages -d dist",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -45,6 +48,7 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.28",
     "rollup-plugin-gzip": "^3.1.0",
     "tailwindcss": "^3.3.3",
