@@ -26,7 +26,8 @@ import tastyMockup from "../../assets/img/tasty_mockup.webp";
 import navbar from "../img/navbar.png";
 import calculadora from "../../assets/img/calculadora.png";
 import styledComponents from "../../assets/icons/styledComponents.svg";
-import profilepicture from "../img/me2.webp";
+import profilepicture1 from "../img/fer1.png";
+import profilepicture2 from "../img/fer2.png";
 //import caricon from "../../assets/icons/car-icon.svg";
 //import travelicon from "../../assets/icons/travel-icon.svg";
 //import hardwareicon from "../../assets/icons/hardware-icon.svg";
@@ -70,7 +71,8 @@ export const headerIntroData = {
       color: "secondary-btn",
     },
   ],
-  profilepicture: profilepicture,
+  profilepicture1: profilepicture1,
+  profilepicture2: profilepicture2,
 } as const;
 
 export const projectsData = [

@@ -6,12 +6,14 @@ import { useSectionInView } from "../assets/lib/hooks";
 import { useActiveSectionContext } from "../context/active-section-context";
 import { useLanguage } from "../context/language-context";
 import { BsMouse } from "react-icons/bs";
+import { useTheme } from "../context/theme-context";
 
 const HeaderIntro: React.FC = () => {
   const { language } = useLanguage();
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-
+  const { theme } = useTheme();
+  
   return (
     <section
       className="hero flex flex-col justify-center gap-10 items-center h-full max-lg:h-full max-lg:gap-6"
@@ -21,10 +23,10 @@ const HeaderIntro: React.FC = () => {
       <RadialGradient scale="scale-y-125" opacity="opacity-30" />
 
       <img
-        src={headerIntroData.profilepicture}
-        alt={headerIntroData.profilepicture}
-        className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-3/4"
-      />
+  src={theme === "dark" ? headerIntroData.profilepicture1 : headerIntroData.profilepicture2}
+  alt={theme === "dark" ? headerIntroData.profilepicture1 : headerIntroData.profilepicture2}
+  className="w-1/6 drop-shadow-2xl rounded-full max-lg:w-3/4"
+/>
       <h1>
         {language === "DE"
           ? headerIntroData.title.de
