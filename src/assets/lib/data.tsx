@@ -468,6 +468,10 @@ export const toastMessages = {
     de: "Por favor escribe tu nombre.",
     en: "Please fill in your name.",
   },
+  sendingMessage: {
+    de: "✉️ Espere un momento, por favor. Estamos enviando su mensaje....",
+    en: "Please wait a moment. We are sending your message.",
+  },
 } as const;
 
 export const buttonLabels = {

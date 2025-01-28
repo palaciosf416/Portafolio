@@ -45,12 +45,18 @@ const Contact: React.FC = () => {
     };
   
     try {
+      if (language === "DE") {
+        toast(toastMessages.sendingMessage.de);
+      } else {
+        toast(toastMessages.sendingMessage.en);
+      }
       const response = await axios.post(apiBaseUrl, data, {
         headers: {
           'Content-Type': 'application/json'
         }
       });
       console.log(response);
+      
       if (language === "DE") {
         toast.success(toastMessages.successEmailSent.de);
       } else {
@@ -72,7 +78,7 @@ const Contact: React.FC = () => {
     setName("");
     setEmail("");
     setSubject("");
-    setMessage("");
+    setMessage("");;
   };
 */
   const handleInputFocus = (fieldName: string) => {
