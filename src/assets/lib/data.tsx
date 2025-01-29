@@ -1,7 +1,6 @@
 
 import woocommerce from "../../assets/icons/woocommerce.svg";
 import canvaicon from "../../assets/icons/canvaicon.svg";
-import figmaicon from "../../assets/icons/figmaicon.svg";
 import htmlicon from "../../assets/icons/htmlicon.svg";
 import cssicon from "../../assets/icons/cssicon.svg";
 import javascripticon from "../../assets/icons/javascripticon.svg";
@@ -12,28 +11,17 @@ import nodejsicon from "../../assets/icons/nodejsicon.svg";
 import tailwindcssicon from "../../assets/icons/tailwindicon.svg";
 import mongodbicon from "../../assets/icons/mongoicon.svg";
 import expressicon from "../../assets/icons/expressicon.svg";
-import trelloicon from "../../assets/icons/trelloicon.svg";
 import apiicon from "../../assets/icons/apiicon.svg";
-//import axiosicon from "../../assets/icons/axiosicon.svg";
-//import spotifyicon from "../../assets/icons/spotifyicon.svg";
-import netlifyicon from "../../assets/icons/netlifyicon.svg";
-//import rendericon from "../../assets/icons/rendericon.svg";
-//import jwticon from "../../assets/icons/jwticon.svg";
 import vite from "../icons/vite.svg";
 import wordpressicon from "../../assets/icons/wordpressicon.svg";
-import tastyMockup from "../../assets/img/tasty_mockup.webp";
-//import stiledCom from "../../assets/img/stiledCom.png";
+import portafolioimg from "../../assets/img/portafolio.png";
 import navbar from "../img/navbar.png";
 import calculadora from "../../assets/img/calculadora.png";
 import styledComponents from "../../assets/icons/styledComponents.svg";
 import profilepicture1 from "../img/fer1.png";
 import profilepicture2 from "../img/fer2.png";
-//import caricon from "../../assets/icons/car-icon.svg";
-//import travelicon from "../../assets/icons/travel-icon.svg";
-//import hardwareicon from "../../assets/icons/hardware-icon.svg";
 import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
-//import styledComponentsicon from "../../assets/icons/styledComponents.svg";
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
 import Privacy from "../../components/Privacy";
@@ -77,25 +65,25 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Tasty App",
+    title: "Portafolio",
     description:
-      "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
+      "El sitio web muestra mis habilidades y proyectos como desarrollador full-stack. Para el formulario de contacto, utilicé una API RESTful construida con Node.js",
     description_EN:
-      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
+      "The website showcases my skills and projects as a full-stack developer. For the contact form, I used a RESTful API built with Node.js",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "REST Api", icon: apiicon },
       { name: "React", icon: reacticon },
-      { name: "Figma", icon: figmaicon },
       { name: "Canva", icon: canvaicon },
-      { name: "Netlify", icon: netlifyicon },
-      { name: "Trello", icon: trelloicon },
+      { name: "TypeScript", icon: typescripticon },
+      { name: "API RESTful", icon: apiicon },
+      { name: "Node.js", icon: nodejsicon },
+      { name: "Express.js", icon: expressicon },
     ],
-    image: tastyMockup,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    image: portafolioimg,
+    deploymenturl: "https://palaciosf416.github.io/Portafolio/",
+    githuburl: "https://github.com/palaciosf416/Portafolio",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
